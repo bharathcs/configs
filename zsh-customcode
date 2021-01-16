@@ -1,0 +1,16 @@
+alias gitygg='echo "git Yggdrasil (alias):
+==============================================================
+git log --graph --decorate --oneline \$(git rev-list -g --all)
+
+" && git log --graph --decorate --oneline $(git rev-list -g --all)'
+
+del () {
+    echo "Moved to trash:"
+    for FILE1 in "$@"
+    do
+    echo $FILE1
+    mv $FILE1 ~/.trash/
+    done
+}
+
+
