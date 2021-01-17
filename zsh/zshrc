@@ -5,3 +5,8 @@ source ~/config/zsh/my-custom-code
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+setopt CORRECT
+setopt CORRECT_ALL
+
+# To revert option to default settings (for scripting etc):
+# emulate -LR zsh

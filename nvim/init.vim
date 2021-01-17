@@ -1,6 +1,7 @@
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set smartindent
 
 set ruler               " Show the line and column numbers of the cursor.
 set wrap                " wrap on
@@ -13,6 +14,9 @@ set foldlevel=99
 " hear your command and then goes back to insert mode:
 " imap <C-w> <C-o><C-w>
 imap <C-w> <Esc><C-w>
+
+"""
+"""
 
 call plug#begin('~/.vim/plugged')
 
