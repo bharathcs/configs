@@ -16,7 +16,7 @@ del () {
 ide-app () {
     if [ "$#" -eq 2 ]; then
         echo "Opening $1 in current folder"
-        open -a $2 ../
+        open -a $2 ./
     elif [ "$#" -eq 3 ]; then
         open -a $2 $3
     else 
