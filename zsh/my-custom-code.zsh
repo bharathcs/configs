@@ -17,7 +17,7 @@ ide-app () {
     if [ "$#" -eq 2 ]; then
         echo "Opening $1 in current folder"
         open -a $2 ../
-    elif [ "$#" -et 3 ]; then
+    elif [ "$#" -eq 3 ]; then
         open -a $2 $3
     else 
         echo "Usage: vscode / intellij {FOLDER_PATH}"
