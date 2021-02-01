@@ -1,3 +1,5 @@
+set nocompatible
+
 source ~/config/nvim/autoload/plug.vim
 source ~/config/nvim/basicOptions.vim
 source ~/config/nvim/autocomplete.vim
@@ -8,8 +10,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 " Plug 'dense-analysis/ale'
 Plug 'vim-pandoc/vim-pandoc'
-Plug 'TovarishFin/vim-solidity'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'TovarishFin/vim-solidity'
 
 call plug#end()
 

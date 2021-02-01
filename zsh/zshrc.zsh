@@ -2,9 +2,9 @@
 # emulate -LR zsh
 
 
-source ~/config/zsh/ohmyzsh
-source ~/config/zsh/my-custom-code
-# source ~/config/zsh/conda
+source ~/config/zsh/ohmyzsh.zsh
+source ~/config/zsh/my-custom-code.zsh
+# source ~/config/zsh/conda.zsh
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -16,3 +16,7 @@ setopt CORRECT
 setopt CORRECT_ALL
 
 export PATH="/usr/local/sbin:$PATH"
+
+alias newpad="open 'https://demo.firepad.io/'"
+
+
