@@ -1,7 +1,7 @@
 "" Set tab defaults
-set tabstop=4           " set length of tab character
+set tabstop=2           " set length of tab character
 set expandtab           " auto expand tabs into spaces
-set shiftwidth=4        " set number of spaces added for each tab
+set shiftwidth=2        " set number of spaces added for each tab
 set smartindent         " keep the indent level when entering new line
 
 " Visuals
@@ -27,10 +27,23 @@ syntax enable
 " Let hjkl move you around the screen properly in wrap mode
 noremap <silent> k gk
 noremap <silent> j gj
-nnoremap <silent> ,<space> :exe ':silent ! open -a Typora %' 
+nnoremap <silent> ,<space> :exe ':silent ! open -a Typora %'
+ 
 
 set incsearch
 set hlsearch
 set lazyredraw
 set ignorecase
 set showmatch
+
+let g:rainbow_active = 1
+set laststatus=2 " enables lightline
+
+" Open existing NERDTree on every buffer
+autocmd BufWinEnter * silent NERDTreeMirror
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+" Ignore java compiled files
+let NERDTreeIgnore=['\.class$', '\~$']
+let g:NERDTreeNodeDelimiter = "\u00a0"

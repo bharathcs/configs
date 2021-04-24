@@ -8,14 +8,16 @@ call plug#begin('~/config/nvim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
-" Plug 'dense-analysis/ale'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'TovarishFin/vim-solidity'
+Plug 'reewr/vim-monokai-phoenix'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
-colorscheme nord
+" color nord
+color monokai-phoenix
 
 " For math stuff (matrices, etc):
 source ~/config/nvim/math-config.vim
