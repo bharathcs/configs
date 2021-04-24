@@ -27,3 +27,10 @@ source ~/config/nvim/math-config.vim
 autocmd BufNewFile,BufRead,BufFilePost *.md,*.pandoc,*.pdk,*.pd,*.pdc set filetype=pandoc
 autocmd FileType pandoc setlocal foldcolumn=0
 
+" For Hledger stuff
+
+autocmd BufNewFile,BufRead,BufFilePost hledger.journal set filetype=ledger
+autocmd BufNewFile,BufRead,BufFilePost *.hledger set filetype=ledger
+autocmd FileType ledger setlocal colorcolumn=40,56,64
+autocmd FileType ledger source ~/config/nvim/hledger.vim
+

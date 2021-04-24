@@ -26,4 +26,6 @@ ide-app () {
 
 alias vscode="ide-app VSCode '/Applications/Visual Studio Code.app'"
 alias intellij="ide-app IntelliJ '/Applications/IntelliJ IDEA.app'"
-
+alias newpad="open 'https://demo.firepad.io/'"
+alias hledgerALL="hledger -f ~/personal/hledger.journal balance -s -t"
+alias hledgerSGD="hledger -f ~/personal/hledger.journal balance -s -t -B -X$"
