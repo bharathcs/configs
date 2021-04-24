@@ -27,15 +27,16 @@ syntax enable
 " Let hjkl move you around the screen properly in wrap mode
 noremap <silent> k gk
 noremap <silent> j gj
-nnoremap <silent> ,<space> :exe ':silent ! open -a Typora %'
- 
+nnoremap <silent> ,<space> :exe ':silent ! open -a Typora %' 
+
+vnoremap <C-y> "*y
 
 set incsearch
 set hlsearch
 set lazyredraw
 set ignorecase
 set showmatch
-
+  
 let g:rainbow_active = 1
 set laststatus=2 " enables lightline
 

@@ -4,6 +4,9 @@ source ~/config/nvim/autoload/plug.vim
 source ~/config/nvim/basicOptions.vim
 source ~/config/nvim/autocomplete.vim
 
+" Download plug.vim and put it in nvim/autoload
+"   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin('~/config/nvim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
