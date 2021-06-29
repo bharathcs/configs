@@ -9,7 +9,7 @@ source ~/config/zsh/ohmyzsh.zsh
 source ~/config/zsh/my-custom-code.zsh
 # source ~/config/zsh/conda.zsh
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
@@ -25,3 +25,8 @@ export PATH="/usr/local/sbin:$PATH"
 #
 export PATH="$(yarn global bin):$PATH"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export JAVA_HOME=$(/usr/libexec/java_home)

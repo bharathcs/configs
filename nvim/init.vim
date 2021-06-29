@@ -35,5 +35,8 @@ autocmd FileType pandoc setlocal foldcolumn=0
 autocmd BufNewFile,BufRead,BufFilePost hledger.journal set filetype=ledger
 autocmd BufNewFile,BufRead,BufFilePost *.hledger set filetype=ledger
 autocmd FileType ledger setlocal colorcolumn=40,56,64
+autocmd FileType ledger setlocal colorcolumn=40,56,64
+autocmd FileType ledger setlocal tabstop=8
+autocmd FileType ledger setlocal shiftwidth=8
 autocmd FileType ledger source ~/config/nvim/hledger.vim
 
