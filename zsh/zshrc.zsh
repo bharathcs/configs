@@ -33,3 +33,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+export GPG_TTY=/dev/ttys000
